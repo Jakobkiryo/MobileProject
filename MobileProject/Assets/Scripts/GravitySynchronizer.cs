@@ -6,11 +6,11 @@ public class GravitySynchronizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InputSystem.EnableDevice(GravitySensor.current);
+        InputSystem.EnableDevice(Accelerometer.current);
         
         Debug.Log("Default sampling");
         
-        GravitySensor.current.samplingFrequency = 30;
+        Accelerometer.current.samplingFrequency = 30;
     }
 
     // Update is called once per frame
