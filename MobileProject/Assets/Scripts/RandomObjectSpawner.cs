@@ -12,9 +12,7 @@ public class RandomObjectSpawner : MonoBehaviour
             SpawnRandomObject();
         }
     }
-
     
-
     PrimitiveType GetRandomRandomPrimitiveType()
     {
         switch (Random.Range(0, 4))
