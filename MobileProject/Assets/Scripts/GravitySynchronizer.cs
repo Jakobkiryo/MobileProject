@@ -16,7 +16,7 @@ public class GravitySynchronizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var gravity = GravitySensor.current.gravity.value;
+        var gravity = Accelerometer.current.acceleration.value;
         
         gravity.z *= -1;
         gravity *= 9.81f;
